@@ -29,6 +29,7 @@ mod tests {
     use rstest::rstest;
 
     #[rstest]
+    #[ignore = "delete to test solution"]
     #[case("input", 1, 2)]
     fn validate(#[case] input: &str, #[case] expected_1: usize, #[case] expected_2: usize) {
         let mut input = Day05Solution::load(input).unwrap();

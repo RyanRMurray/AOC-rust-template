@@ -6,6 +6,7 @@ pub struct Day01Solution {}
 
 pub fn day01(input: &str) -> Result<f32> {
     solve_linear::<Day01Solution, _, _, _>(input)
+
 }
 
 impl SolutionLinear<Vec<usize>, usize, usize> for Day01Solution {
@@ -29,6 +30,7 @@ mod tests {
     use rstest::rstest;
 
     #[rstest]
+    #[ignore = "delete to test solution"]
     #[case("input", 1, 2)]
     fn validate(#[case] input: &str, #[case] expected_1: usize, #[case] expected_2: usize) {
         let mut input = Day01Solution::load(input).unwrap();
