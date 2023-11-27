@@ -6,6 +6,7 @@ pub struct Day18Solution {}
 
 pub fn day18(input: &str) -> Result<f32> {
     solve_linear::<Day18Solution, _, _, _>(input)
+
 }
 
 impl SolutionLinear<Vec<usize>, usize, usize> for Day18Solution {

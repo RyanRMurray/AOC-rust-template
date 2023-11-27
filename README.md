@@ -18,6 +18,8 @@ or
 cargo run -- -d [day number] -i [input file path]
 ```
 
+To create a new solution file for a particular day, run `./start_day [day number]`
+
 By default, `./inputs/input_{day}.txt` will be used as the input file path. For example, day 01 will use `./inputs/input_01.txt`
 
 For more uses, run `cargo run -- --help`.
@@ -26,7 +28,7 @@ For more uses, run `cargo run -- --help`.
 
 Before contributing, run the following:
 ```
-pip install pre-commit
+pip install pre-commit argparse
 pre-commit install
 ```
 This will run a number of linting actions and tests before you can commit to ensure your code works.
