@@ -1,4 +1,6 @@
-/.vscode
 /target
 
 /inputs
+
+test.dot
+test.svg
